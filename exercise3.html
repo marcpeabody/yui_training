@@ -12,6 +12,30 @@
             margin: auto;
             width: 95%;
         }
+        #productContainer ul {
+            list-style: none;
+        }
+        #productContainer li {
+            margin-bottom: 2px;
+        }
+        #productContainer li button {
+            width: 150px;
+            position: relative;
+            height: 30px;
+            vertical-align: center;
+        }
+        #productContainer li button div {
+            display: inline;
+            position: absolute;
+            top: 8px;
+        }
+        #productContainer li button div.productDescription {
+            left: 5px;
+        }
+        #productContainer li button div.productPrice {
+            left: 105px;
+            text-align: right;
+        }
     </style>
 
 </head>
@@ -29,15 +53,6 @@
 </div>
 
 <script src="yui3/build/simpleyui/simpleyui.js" type="text/javascript"></script>
-<script type="text/javascript">
-    var x = Y.Node.create('<div>hi</div>');
-    Y.one('#header').append(x);
-    setTimeout(function(){
-        Y.one('#productContainer').append(x);
-        setTimeout(function(){
-            Y.one('#cartContainer').append(x);
-        }, 1000);
-    }, 1000);
-</script>
+<script src="js/index.js" type="text/javascript"></script>
 </body>
 </html>
